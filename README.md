@@ -1,4 +1,5 @@
 📘 Campus Feedback Portal
+
 A Full Stack Web Application
 
 📌 Introduction
@@ -17,6 +18,7 @@ Allow administrators to review, manage, update, and delete feedback
 Demonstrate real-world full stack application development
 
 👥 User Roles
+
 👨‍🎓 Student
 
 Register and log in
@@ -40,12 +42,18 @@ Key Principle:
 One Frontend – One Backend
 
 Frontend (React)
+
         ↓
+        
 Backend (Node.js + Express)
+
         ↓
+        
 Database (MongoDB)
 
+
 🗄️ Database Design (DB-First Approach)
+
 5.1 Database
 
 MongoDB (Atlas or Local)
@@ -53,16 +61,27 @@ MongoDB (Atlas or Local)
 ODM: Mongoose
 
 5.2 Collections
+
 5.2.1 Users Collection
+
 {
+
   "_id": "ObjectId",
+  
   "name": "string",
+  
   "email": "string",
+  
   "password": "string",
+  
   "role": "student | admin",
+  
   "department": "string",
+  
   "createdAt": "Date",
+  
   "updatedAt": "Date"
+  
 }
 
 
@@ -71,14 +90,23 @@ Indexes
 email (unique)
 
 5.2.2 Feedback Collection
+
 {
+
   "_id": "ObjectId",
+  
   "studentId": "ObjectId (ref users)",
+  
   "subject": "string",
+  
   "facultyName": "string",
+  
   "rating": "number",
+  
   "comment": "string",
+  
   "submittedAt": "Date"
+
 }
 
 
@@ -89,6 +117,7 @@ studentId
 subject
 
 ⚙️ Backend Design (Node.js + Express)
+
 6.1 Technology Stack
 
 Node.js
@@ -100,13 +129,21 @@ MongoDB + Mongoose
 JWT Authentication
 
 6.2 Backend Folder Structure
+
 backend/
+
 ├── controllers/
+
 ├── models/
+
 ├── routes/
+
 ├── middleware/
+
 ├── config/
+
 └── server.js
+
 
 6.3 Authentication Flow (Student & Admin)
 
@@ -121,14 +158,22 @@ JWT token is generated
 User is redirected to the respective dashboard
 
 6.4 API Endpoints (Sample)
+
 /api/auth/register
+
 /api/auth/login
+
 /api/feedback/add
+
 /api/feedback/get
+
 /api/feedback/update
+
 /api/feedback/delete
 
+
 🎨 Frontend Design (MERN – React)
+
 7.1 Tech Stack
 
 React
@@ -140,12 +185,19 @@ Axios
 HTML & CSS
 
 7.2 Frontend Folder Structure
+
 frontend/
+
 ├── components/
+
 ├── pages/
+
 ├── services/
+
 ├── App.js
+
 └── index.js
+
 
 7.3 Key Pages
 
@@ -160,6 +212,7 @@ Feedback Submission Page
 Admin Dashboard
 
 📝 Feedback Management
+
 8.1 Current Scope
 
 Students submit feedback
