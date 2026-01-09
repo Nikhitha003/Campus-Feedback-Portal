@@ -7,6 +7,7 @@ A Full Stack Web Application
 The Campus Feedback Portal is a full stack web application designed to collect and manage student feedback in an efficient, secure, and organized manner.
 This project helps students understand frontend development, backend development, authentication, and database integration using modern web technologies.
 
+
 🎯 Purpose of the Project
 
 The main objective of this application is to:
@@ -20,6 +21,7 @@ Demonstrate real-world full stack application development
 👥 User Roles
 
 👨‍🎓 Student
+
 
 Register and log in
 
@@ -37,19 +39,19 @@ Update and delete feedback
 
 🏗️ High-Level Architecture
 
+
 Key Principle:
 
 One Frontend – One Backend
 
 Frontend (React)
 
-        ↓
         
 Backend (Node.js + Express)
 
-        ↓
         
 Database (MongoDB)
+
 
 
 🗄️ Database Design (DB-First Approach)
@@ -59,6 +61,7 @@ Database (MongoDB)
 MongoDB (Atlas or Local)
 
 ODM: Mongoose
+
 
 5.2 Collections
 
@@ -85,9 +88,8 @@ ODM: Mongoose
 }
 
 
-Indexes
+Indexes:email (unique)
 
-email (unique)
 
 5.2.2 Feedback Collection
 
@@ -110,13 +112,12 @@ email (unique)
 }
 
 
-Indexes
 
-studentId
+Indexes:studentId,subject
 
-subject
 
 ⚙️ Backend Design (Node.js + Express)
+
 
 6.1 Technology Stack
 
@@ -128,7 +129,9 @@ MongoDB + Mongoose
 
 JWT Authentication
 
+
 6.2 Backend Folder Structure
+
 
 backend/
 
@@ -145,7 +148,9 @@ backend/
 └── server.js
 
 
+
 6.3 Authentication Flow (Student & Admin)
+
 
 User registers or logs in using email and password
 
@@ -156,6 +161,7 @@ User role (student/admin) is verified
 JWT token is generated
 
 User is redirected to the respective dashboard
+
 
 6.4 API Endpoints (Sample)
 
@@ -172,7 +178,9 @@ User is redirected to the respective dashboard
 /api/feedback/delete
 
 
+
 🎨 Frontend Design (MERN – React)
+
 
 7.1 Tech Stack
 
@@ -184,7 +192,10 @@ Axios
 
 HTML & CSS
 
+
 7.2 Frontend Folder Structure
+
+
 
 frontend/
 
@@ -199,7 +210,9 @@ frontend/
 └── index.js
 
 
+
 7.3 Key Pages
+
 
 Login Page
 
@@ -211,7 +224,9 @@ Feedback Submission Page
 
 Admin Dashboard
 
+
 📝 Feedback Management
+
 
 8.1 Current Scope
 
@@ -227,7 +242,9 @@ All fields are mandatory
 
 Only logged-in users can submit feedback
 
+
 🔐 Security Considerations
+
 
 JWT-based authentication
 
@@ -237,7 +254,9 @@ Input validation
 
 Secure API access
 
+
 ⭐ Features
+
 
 User Authentication
 
@@ -247,7 +266,9 @@ CRUD Operations
 
 Admin Management Dashboard
 
+
 🔄 CRUD Operations
+
 
 Create: Student submits feedback
 
@@ -257,7 +278,9 @@ Update: Feedback can be edited
 
 Delete: Feedback can be removed
 
+
 ✅ Conclusion
+
 
 The Campus Feedback Portal is a full stack web application that demonstrates real-world usage of React, Node.js, Express, and MongoDB.
 It implements authentication, CRUD operations, role-based access, and secure database integration ...
