@@ -1,6 +1,3 @@
-# Campus-Feedback-Portal
-fullstack project
-
 # Campus Feedback Portal
 A Full Stack Web Application
 1. Introduction
