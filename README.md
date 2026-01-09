@@ -7,13 +7,13 @@ This project helps students understand frontend development, backend development
 
 🎯 Purpose of the Project
 
-The main objective of this application is:
+The main objective of this application is to:
 
-To provide a platform where students can submit feedback
+Provide a platform where students can submit feedback
 
-To allow administrators to review, manage, update, and delete feedback
+Allow administrators to review, manage, update, and delete feedback
 
-To demonstrate real-world full stack application development
+Demonstrate real-world full stack application development
 
 👥 User Roles
 👨‍🎓 Student
@@ -65,7 +65,7 @@ ODM: Mongoose
 }
 
 
-Indexes:
+Indexes
 
 email (unique)
 
@@ -81,7 +81,7 @@ email (unique)
 }
 
 
-Indexes:
+Indexes
 
 studentId
 
@@ -105,7 +105,7 @@ backend/
 ├── routes/
 ├── middleware/
 ├── config/
-├── server.js
+└── server.js
 
 6.3 Authentication Flow (Student & Admin)
 
@@ -120,17 +120,11 @@ JWT token is generated
 User is redirected to the respective dashboard
 
 6.4 API Endpoints (Sample)
-
 /api/auth/register
-
 /api/auth/login
-
 /api/feedback/add
-
 /api/feedback/get
-
 /api/feedback/update
-
 /api/feedback/delete
 
 🎨 Frontend Design (MERN – React)
@@ -150,7 +144,7 @@ frontend/
 ├── pages/
 ├── services/
 ├── App.js
-├── index.js
+└── index.js
 
 7.3 Key Pages
 
@@ -213,4 +207,3 @@ Delete: Feedback can be removed
 
 The Campus Feedback Portal is a full stack web application that demonstrates real-world usage of React, Node.js, Express, and MongoDB.
 It implements authentication, CRUD operations, role-based access, and secure database integration ...
-
