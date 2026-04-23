@@ -75,11 +75,3 @@ The frontend runs on `http://localhost:5173`.
 - `PUT /api/feedback/:id`
 - `DELETE /api/feedback/:id`
 
-
-
-
-### 📥 Access the Record
-👉 [Download FSD Record (DOCX)](docs/FSD-Record.docx)
-
-<!-- Optional PDF version -->
-<!-- 👉 [View FSD Record (PDF)](docs/FSD-Record.pdf) -->
